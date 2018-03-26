@@ -1,0 +1,11 @@
+Instructions:
+
+Because this is meant to be a back-end system, it doesn't have a very polished UI and is controlled through the command line. There are multiple ways to run the program.
+
+1. I've provided a GPS.jar and GPS.bat. If you run GPS.bat, the application will open.
+
+2. I've also provided all source files. You can compile them yourself in Eclipse or your favorite IDE, and the main() method is found in the Menu class.
+
+Once the program is running and has loaded, there are 3 options in the main menu. You can enter (1) to find the route with the shortest distance, (2) to find the route with the least turns (i.e. encourage the use of highways), or (3) to quit the program.
+
+If you choose options (1) or (2), a new menu will appear prompting you for your location, and then your destination. There are on-screen instructions on how to do that. Finally, the program will output your desired route.

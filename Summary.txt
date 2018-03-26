@@ -1,0 +1,25 @@
+Hi!
+
+Summary:
+
+My project is meant to work as a sort of back-end to a GPS system. The idea is that in the front end, the UI will figure out the user's desired beginning and end destinations. It would then decode the locations into integers, and send it to this. This program takes the location and destination integers, and is able to find either the shortest route, or the route with the least turns. Then, of course, it would send this route back to the UI, and the UI will retranslate the numbers back into unique road names and give turn by turn directions.
+
+Relevance:
+
+This project mainly focuses on graphs and graph algorithms. The dataset is read in as a text file, and the text is parsed into a graph by my GraphParser class. I then implemented 2 graph algorithms, BFS and Dijkstra's Algorithm, to work on the graph and return the desired paths. I would also argue that this project contains Physical Networks, because the graph at hand models the physical road networks that we use every day. However, I understand that's a loose association :)
+
+Work Breakdown:
+
+I'm the only member of my group, so I wrote the entire source code.
+
+
+
+Dataset Limitations:
+The dataset I used can be found at http://www.dis.uniroma1.it/challenge9/download.shtml
+
+I used the Northeast USA Distance weighted graph.
+
+Some limitations of my program because of the dataset are as follows. Firstly, I can't for the life of me figure out what units of distance they are using, and it doesn't seem to say anywhere on the website. For the sake of the program output, I've just assumed that it's in meters because for some reason I can't bring myself to believe that there's a distance of 3,049,576 miles between any two roads in the Northeast USA. Secondly, since they unfortunately chose to anonymize the set, I'm forced to output numbers instead of road names. If there were road names, my solution would look very much the same except my Edge class would hold the String name of both roads, and I would output that String instead of its number. Lastly, the website says that there are some errors in the dataset especially when it comes to exits on highways, the routes may not represent the actual optima.
+
+Thank you, I've really enjoyed this class!
+
